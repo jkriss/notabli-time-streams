@@ -42,6 +42,7 @@ async function run() {
         contentType: mime.getType(ext),
         overwrite: true
       })
+      json.media = `../${streamName}/${mediaId}`
       await metaStream.save({
         name,
         date,
